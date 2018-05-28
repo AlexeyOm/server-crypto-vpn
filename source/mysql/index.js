@@ -5,9 +5,9 @@ let mysql = require('async-mysql');
     	    try{
     	   
 		    connection = mysql.connect({
-		        	host: "localhost",
-					user: "alexeyom",
-					password: "",
+		        	host: "127.0.0.1",
+					user: "root",
+					password: "crabmakehorsered",
 					database: "c9",
 					port: 3306
 		    });
