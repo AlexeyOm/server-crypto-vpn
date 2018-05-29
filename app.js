@@ -10,6 +10,7 @@ var indexRouter = require('./source/routes/index');
 var usersRouter = require('./source/routes/users');
 
 var getInvoice = require('./source/routes/getInvoice');
+var download = require('./source/routes/download');
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/getinvoice', getInvoice);
+app.use('/download', download);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
